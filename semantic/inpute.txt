@@ -1,0 +1,24 @@
+number main() {
+    set number x = get( char ) ;
+    set string p = "hello" + 3;
+    set string b = "hello" + 'c';
+
+    set string m = "bye";
+    set string l;
+    l = "abc" + m;
+    set boolean c = valid;
+    set letter f ='h';
+    set number d = 10;
+    
+    check(x>=d && valid) {
+        set number r = 5;
+    } 
+    otherwise {
+        write("Hi");
+    }
+    y = x + d;
+    set string l = "bye";
+
+     
+    send x;
+}
