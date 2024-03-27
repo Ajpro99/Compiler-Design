@@ -1,24 +1,26 @@
-number main() {
-    set number x = get( char ) ;
-    set string p = "hello" + 3;
-    set string b = "hello" + 'c';
+num main() {
+set num x = input( char );
+set str y = “hello” + 3;
+set str z = “hello” + ‘c’;
 
-    set string m = "bye";
-    set string l;
-    l = "abc" + m;
-    set boolean c = valid;
-    set letter f ='h';
-    set number d = 10;
-    
-    check(x>=d && valid) {
-        set number r = 5;
-    } 
-    otherwise {
-        write("Hi");
-    }
-    y = x + d;
-    set string l = "bye";
+set str p = “world”;
+set str q;
+q = “hello” + p;
+set bool c = valid;
+set char f =‘h’;
+set num d = 5;
 
-     
-    send x;
+check(x>=d && valid) 
+{
+set num a = 5;
+}
+otherwise {
+write(“Hi”);
+}
+
+y=x+d;
+
+temp=x+d;
+set str l="bye";
+send x;
 }
