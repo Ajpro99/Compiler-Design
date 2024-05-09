@@ -1,0 +1,42 @@
+# This is QuickSort
+num partition(num sarr, num low, num high){
+    set num pivot = sarr[high];
+    set num i = high;
+    set num k = high;
+    until(i > low){
+        check(sarr[i] > pivot){
+            set num temp = 0;
+            temp = sarr[i];
+            sarr[i] = sarr[k];
+            sarr[k] = temp;
+            k = k - 1;
+        }
+        i = i - 1;
+    }
+    set num replace = sarr[low];
+    sarr[low] = sarr[high];
+    sarr[high] = replace;
+    send k;
+};
+
+bool quickSort(num arr, num low, num high){
+    check(low < high){
+        set num idx = partition(arr, low, high);
+        quickSort(arr,low,idx-1);
+        quickSort(arr,idx,high);
+    }
+}
+
+num main(){
+    set num arr[10];
+    write("Number of Elements of Array?");
+    set num n = getinput("num");
+    set num ct = 0;
+    until( ct < n ){
+        arr[ct] = getinput("num");
+        ct = ct + 1;
+    }
+    quickSort(arr,0,n-1);
+    send 0;
+}
+
